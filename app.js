@@ -22,10 +22,10 @@ customValue.addEventListener("input",customTipFunc);
 billValue.value = "0.0";
 peopleValue.value = "1";
 
-tipAmount.value = "0.0";
+tipAmount.value = "0.00";
 tipAmount.innerHTML = "$"+tipAmount.value;
 
-totalAmount.value = "0.0";
+totalAmount.value = "0.00";
 totalAmount.innerHTML = "$"+totalAmount.value;
 
 
@@ -71,6 +71,7 @@ function handleClick(event){
     tips.forEach(function(val){
         val.classList.remove("active-tip");
         customValue.value ="";
+        // console.log(event.target.innerHTML);
         if(event.target.innerHTML == val.innerHTML){
             val.classList.add("active-tip");
             // console.log(val.innerHTML);
@@ -100,5 +101,4 @@ function resetFunc(){
     peopleValue.value = "1";
     peopleValueFunc();
     customValue.value = "";
-    
 }

@@ -171,3 +171,31 @@ label{
     position: absolute;
     z-index: 100;
 } */
+
+@media (min-width: 1200px){
+    body{
+        max-width: 900px;
+    }
+    .container{
+        flex-direction: row;
+        border-radius: 1.5em;
+        padding: 2rem;
+    }
+    .tip{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .result{
+        width: 100%;
+        margin: 0rem 0rem 0rem 2rem;
+        padding: 3rem 2rem 1.5rem 2rem;
+    }
+    .tip-amount{
+        margin-bottom: 3rem;
+    }
+    .total{
+        margin-bottom: 8rem;
+    }
+    .error{
+        padding-left: 8.3rem;
+    }
+}
